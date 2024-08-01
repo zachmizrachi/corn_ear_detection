@@ -23,3 +23,15 @@ pip install numpy==1.24.3
 # Install Matplotlib 3.7.1
 pip install matplotlib==3.7.1
 ```
+
+To process the images in Popcorn Images/Ears, run main.py. This will generate the json file image_data.json and populate the detections folder. 
+
+```bash
+python main.py
+```
+
+To generate charts based off image_data.json, run charts.py. This will repopulate the charts folder. 
+
+```bash
+python charts.py
+```
