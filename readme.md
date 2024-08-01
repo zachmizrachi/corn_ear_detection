@@ -1,6 +1,6 @@
 # Corn Ear Detection and Processing
 
-This project processes images to detect and measure ears of corn. It performs various image processing tasks like masking, edge detection, and line drawing. The results are stored in a JSON file containing information about detected contours.
+This project processes images to detect and measure ears of corn. It performs various image processing tasks like masking, edge detection, and line drawing. The results are stored in a JSON file containing information about detected contours. The "Detections" folder shows the result of the algorithm on each input image. The "charts" folder contains example visualizations of the data.
 
 ## Requirements
 
