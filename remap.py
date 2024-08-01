@@ -2,34 +2,6 @@ import cv2
 import numpy as np
 import os
 
-# def filter_yellow(image):
-#     hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-#     # t = 50
-    
-#     lower_green = np.array([10, 50, 100])
-#     upper_green = np.array([100, 255, 255])
-#     mask = cv2.inRange(hsv_image, lower_green, upper_green)
-#     yellow_parts = cv2.bitwise_and(image, image, mask=mask)
-#     # cv2.imshow('Original Image', image)
-#     # cv2.imshow('Yellow Mask', mask)
-#     # # cv2.imshow('Filtered Yellow Parts', yellow_parts)
-#     # cv2.waitKey(0)
-#     # cv2.destroyAllWindows()
-
-#     lower_green = np.array([0, 100, 50])
-#     upper_green = np.array([100, 255, 200])
-#     mask = cv2.inRange(image, lower_green, upper_green)
-#     # cv2.imshow('Green Mask', mask)
-#     green_parts = cv2.bitwise_and(image, image, mask=mask)
-
-#     both_mask = cv2.bitwise_or(yellow_parts, green_parts)
-    
-#     # cv2.imshow('Original Image', image)
-#     # cv2.imshow('Both Mask', both_mask)
-#     # cv2.waitKey(0)
-#     # cv2.destroyAllWindows()
-
-#     return both_mask
 
 def filter_black_areas(image):
     # Convert the image to HSV color space
@@ -39,47 +11,36 @@ def filter_black_areas(image):
     upper_black = np.array([180, 255, 130])  # Adjust the upper bound as needed
     # Create a mask for black areas
     black_mask = cv2.inRange(hsv_image, lower_black, upper_black)
-    # blurred_mask = cv2.GaussianBlur(black_mask, (5, 5), 0)  # Adjust kernel size as needed
- 
-    
-    # cv2.imshow('Original Image', image)
-    # cv2.imshow('Black Mask', cv2.bitwise_not(black_mask))
-    # cv2.imshow('Filtered Black Parts', black_mask)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows(  )
     return black_mask
 
 def find_sheet(image):
 
+    # filter for green (paper) in hsv space
     hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)    
     lower_green = np.array([10, 50, 100])
     upper_green = np.array([100, 255, 255])
     mask = cv2.inRange(hsv_image, lower_green, upper_green)
     yellow_parts = cv2.bitwise_and(image, image, mask=mask)
 
+    # filter for green (paper) in rgb space
     lower_green = np.array([0, 100, 50])
     upper_green = np.array([100, 255, 200])
     mask = cv2.inRange(image, lower_green, upper_green)
     green_parts = cv2.bitwise_and(image, image, mask=mask)
+    
+    # combine the two filters
     both_mask = cv2.bitwise_or(yellow_parts, green_parts)
-
     gray_image = cv2.cvtColor(both_mask, cv2.COLOR_BGR2GRAY)
+
+    # find the contours
     contours, _ = cv2.findContours(gray_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
+
     if contours:
-        largest_contour = max(contours, key=cv2.contourArea)
+        largest_contour = max(contours, key=cv2.contourArea) # the page will be the largest contour in the filtered image
         mask = np.zeros_like(gray_image)
         cv2.drawContours(mask, [largest_contour], -1, 255, thickness=cv2.FILLED)
-                
-        # Apply the mask to the original image
         filtered_image = cv2.bitwise_and(image, image, mask=mask)
-        
-        # Display the results
-        # cv2.imshow('Original Image', image)
-        # cv2.imshow('Mask', mask)
-        # cv2.imshow('Filtered Image', filtered_image)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
         return filtered_image
     else:
         print("No contours found.")
@@ -87,52 +48,34 @@ def find_sheet(image):
 
 def find_corner_coords(img) : 
 
-    # print("here")
-    # Load the image
-    # img = cv2.imread(img_path)
     black_mask = filter_black_areas(img)
-
     kernel_size=(2, 2)
     kernel = np.ones(kernel_size, np.uint8)
-    # dilated_image = cv2.dilate(black_mask, kernel, iterations=3)
-    blurImg = cv2.blur(black_mask, (10,10))  
-    # cv2.imshow("blur", blurImg)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
-
-    # cv2.imshow("black_mask", black_mask)
-    # cv2.waitKey(0)
-
-    # Detect contours
+    blurImg = cv2.blur(black_mask, (10,10))  # helps to smooth contour detections (not over detect)
+   
     contours, hierarchy = cv2.findContours(image=blurImg, mode=cv2.RETR_TREE, method=cv2.CHAIN_APPROX_SIMPLE)
 
     # Define circle parameters
     circle_radius = 20
-    circle_color = (0, 0, 255)  # Red color in BGR
-    text_color = (255, 0, 255)  # White color for text
+    text_color = (255, 0, 255) 
 
-    # List to store contours with 6 points and their areas
+    # list to store contours that meet corner requirements
     contours_with_area = []
 
     min_area = 1000
     w, h, d = img.shape
     area_sheet = w*h
 
-
     # Loop through contours and filter by vertices
     for contour in contours:
-        # Approximate the contour to a polygon
         epsilon = 0.01  * cv2.arcLength(contour, True)
-        approx = cv2.approxPolyDP(contour, epsilon, True)
+        approx = cv2.approxPolyDP(contour, epsilon, True)  # Approximate the contour to a polygon
         num_vertices = len(approx)
         
-        if num_vertices == 6:
-
+        if num_vertices == 6: # the page corner markers have 6 vertices 
             area = cv2.contourArea(contour)
-
-            if  area > min_area and area < (area_sheet*0.2):
+            if  area > min_area and area < (area_sheet*0.2): # approximation for size of corner
                 contours_with_area.append((approx, area))
-
                 M = cv2.moments(contour)
                 if M['m00'] != 0:
                     cx = int(M['m10'] / M['m00'])
@@ -150,22 +93,14 @@ def find_corner_coords(img) :
     # cv2.imshow("blur", img)
     # cv2.waitKey(0)
     # cv2.destroyAllWindows()
-
-    # Sort contours by area in descending order and get the top 4 largest contours
-    # contours_with_area = sorted(contours_with_area, key=lambda x: x[1], reverse=True)
-
-    contour_count = 0
+                
     w, h, d = img.shape
     area_sheet = w*h
    
-    mean_area = np.mean([area for contour, area in contours_with_area])
-    # Sort the contours by their deviation from the mean area
-    # sorted_contours = sorted(contours_with_area, key=lambda x: abs(x[1] - mean_area))
+    # Sort the contours by size
     sorted_contours = sorted(contours_with_area, key=lambda x: x[1])
 
-
-    # for i in sorted_contours : 
-    #     print(i[1])
+    # for i in sorted_contours :  print(i[1])
     # print("# of detections: " +  str(len(sorted_contours)))
 
     min_diff = float('inf')
@@ -187,7 +122,6 @@ def find_corner_coords(img) :
 
 
     sheet_coordinates = np.empty((0, 2), dtype="float32")  # Initialize as an empty 2D array
-
 
     for contour, area in best_subset:
 
@@ -223,8 +157,8 @@ def transform_sheet(image, corners) :
     pts_dst = np.array([[0, 0], [width - 1, 0], [0, height - 1], [width - 1, height - 1]], dtype="float32")
     # top left, top right, bottom left, bottom right
 
+    # need to match the original corner marker to its respective corner (TL TR BL BR) before warp
     for point_src in pts_dst:
-        # Compute the Euclidean distances
         distances = np.linalg.norm(corners - point_src, axis=1)
         closest_index = np.argmin(distances)
         # print("Closest: " + str(corners[closest_index]))
@@ -235,17 +169,9 @@ def transform_sheet(image, corners) :
 
     offset = 50
     sorted_corners = sorted_corners + np.array([[-offset, -offset], [offset, -offset], [-offset, offset], [offset, offset]])
-
-    # print("Src: " + str(corners))
-    # print("Corners: " + str(corners))
-    # print("Sorted Corners: ")
-    # for i in sorted_corners : 
-    #     print(str(i) + ": " + str(i[0] + (width*i[1])))
-    # print("Dest: " +   str(pts_dst))
  
     # Compute the perspective transformation matrix
     M = cv2.getPerspectiveTransform(np.float32(sorted_corners), np.float32(pts_dst))
-
     # Apply the perspective transformation
     warped_image = cv2.warpPerspective(image, M, (width, height))
 
@@ -264,26 +190,9 @@ if __name__ == "__main__":
     folder_path = '/Users/zachmizrachi/Documents/Documents - Zach’s MacBook Pro (2) - 1/Corn Ear Labeling/Popcorn Images/Ears'
 
     # Initialize an empty list to store image information
-    # image_data = []
-
-    image_names = [
-        "IMG_9785.jpeg",
-        "IMG_9655.jpeg",
-        "IMG_9655.jpeg",
-        "IMG_9602.jpeg",
-        "IMG_9602.jpeg",
-        "IMG_9841.jpeg",
-        "IMG_9841.jpeg",
-        "IMG_9529.jpeg",
-        "IMG_9943.jpeg",
-        "IMG_9943.jpeg",
-        "IMG_9934.jpeg"
-    ]   
 
     # Loop through the images in the folder
     for idx, filename in enumerate(os.listdir(folder_path)):
-
-        if filename not in image_names : continue
     
         image_path = os.path.join(folder_path, filename)
         # image_path =   "Popcorn Images/Ears/IMG_9737.jpeg"

@@ -8,42 +8,27 @@ from remap import *
 def mask_yellow(image):
     # Convert BGR to HSV
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-
     # Define range of yellow color in HSV
     lower_yellow = np.array([10, 40, 100])
     upper_yellow = np.array([30, 255, 255])
-
     # Threshold the HSV image to get only yellow colors
     mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
-
     # Bitwise-AND mask and original image
     masked_image = cv2.bitwise_and(image, image, mask=mask)
-
     return masked_image
 
 def detect_contours(image):
-    # Convert image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # Find contours
     contours, _ = cv2.findContours(gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
     return contours
 
 def detect_lines(image):
-    # Convert image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # Use Canny edge detection
-    edges = cv2.Canny(gray, 50, 150)
-
-    # Use Hough Line Transform to detect lines
+    edges = cv2.Canny(gray, 50, 150)     # Use Canny edge detection
     lines = cv2.HoughLinesP(edges, rho=1, theta=np.pi/180, threshold=10, minLineLength=100, maxLineGap=10)
-
     return lines
 
 def draw_lines(image, lines):
-    # Draw detected lines on the original image
     image_with_lines = image.copy()
     if lines is not None:
         for line in lines:
@@ -53,15 +38,11 @@ def draw_lines(image, lines):
     return image_with_lines
 
 def apply_gaussian_blur(image, kernel_size=(5, 5)):
-    # Apply Gaussian blur
     blurred_image = cv2.GaussianBlur(image, kernel_size, 0)
     return blurred_image
 
 def convert_and_dilate(image, kernel_size=(5, 5)):
-    # Convert the image to grayscale
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    
-    # Apply dilation to the grayscale image
     kernel = np.ones(kernel_size, np.uint8)
     dilated_image = cv2.dilate(gray_image, kernel, iterations=5)
     
@@ -69,38 +50,23 @@ def convert_and_dilate(image, kernel_size=(5, 5)):
 
 
 def contours(image, filename):
+    
     # Find Canny edges
     edged = cv2.Canny(image, 100, 200)
 
-    cv2.imwrite("edged.png", edged)
-    # cv2.waitKey(0)
-
-    # Finding Contours
     contours, hierarchy = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-    # cv2.drawContours(edged, contours, -1, (0, 255, 0), 2)
-    # cv2.imshow("edged w contours", edged)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
 
-
-    # Sort contours by area in descending order
+    # Sort contours by area and top bottom difference in descending order 
+    # helps distinguish the ears of corn vs misdetections
     contours = sorted(contours, key=cv2.contourArea, reverse=True)[:4]  # Select the four largest contours
-
-    # for contour in contours : 
-    #     print(cv2.contourArea(contour))
-
-    # Sort contours by top-to-bottom difference (top two)
     contours = sorted(contours, key=lambda x: x[:, :, 1].max() - x[:, :, 1].min(), reverse=True)[:2]
 
     ret = np.array(np.zeros((2,4)))
 
-    # Draw selected contours and mark highest and lowest points
     for idx, contour in enumerate(contours):
         # Calculate highest and lowest points of contour
         ext_top = tuple(contour[contour[:, :, 1].argmin()][0])
         ext_bot = tuple(contour[contour[:, :, 1].argmax()][0])
-
-        # Draw contour
         cv2.drawContours(image, [contour], -1, (255, 255, 0), thickness=10)
 
         # cv2.imshow("im", image)
@@ -139,8 +105,6 @@ def contours(image, filename):
             if len(intersections) > 1:
                 horizontal_distances.append(abs(intersections[0][0] - intersections[-1][0]))
 
-        # cv2.imwrite('Horizontal Intersections.png', image)
-        # cv2.waitKey(0)
 
         # Draw vertical lines connecting sides of bounding box with contour
         vertical_distances = []
@@ -169,7 +133,6 @@ def contours(image, filename):
         # cv2.destroyAllWindows()
 
         cv2.imwrite('detections/detect_' + str(filename), image)
-        # cv2.waitKey(0)
 
         # Calculate average width and height based on horizontal and vertical distances
         avg_width = np.mean(horizontal_distances) if horizontal_distances else 0
@@ -180,42 +143,19 @@ def contours(image, filename):
         ret[idx, 2] = avg_height
         ret[idx, 3] = h
 
-    # cv2.destroyAllWindows()
-
     return ret
-
-# image_names = [
-#     "IMG_9785.jpeg",
-#     "IMG_9655.jpeg",
-#     "IMG_9655.jpeg",
-#     "IMG_9602.jpeg",
-#     "IMG_9602.jpeg",
-#     "IMG_9841.jpeg",
-#     "IMG_9841.jpeg",
-#     "IMG_9529.jpeg",
-#     "IMG_9943.jpeg",
-#     "IMG_9943.jpeg",
-#     "IMG_9934.jpeg"
-# ]
 
 def main():
 
     # Define the folder containing the images
-    folder_path = '/Users/zachmizrachi/Documents/Documents - Zach’s MacBook Pro (2) - 1/Corn Ear Labeling/Popcorn Images/Ears'
-
-    # Initialize an empty list to store image information
+    folder_path = 'Popcorn Images/Ears'
     image_data = []
 
     # Loop through the images in the folder
     for idx, filename in enumerate(os.listdir(folder_path)):
-
-        # filename = "IMG_9853.jpeg"
        
         image_path = os.path.join(folder_path, filename)
         img = cv2.imread(image_path)
-
-        # if filename not in image_names : continue
-
         height, width = img.shape[:2]
 
         if width > height:
@@ -228,14 +168,11 @@ def main():
         # cv2.destroyAllWindows()
 
         yellow_img = mask_yellow(scaled_img )
-        cv2.imwrite("yellow.png", yellow_img)
-    #     # cv2.waitKey(0)
+        # cv2.imwrite("yellow.png", yellow_img)
         gray_image, dilated_image = convert_and_dilate(yellow_img)
-        cv2.imwrite("dilated_image.png", dilated_image)
-    #     # cv2.waitKey(0)
+        # cv2.imwrite("dilated_image.png", dilated_image)
         blurred =  cv2.medianBlur(dilated_image, 51)
-        cv2.imwrite("blurred.png", blurred)
-    #     # cv2.waitKey(0)
+        # cv2.imwrite("blurred.png", blurred)
         
         data = contours(blurred, filename)
 

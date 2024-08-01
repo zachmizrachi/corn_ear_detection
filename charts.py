@@ -1,6 +1,5 @@
 import json
 import matplotlib.pyplot as plt
-
 import numpy as np
 
 def create_charts(data):
@@ -76,14 +75,18 @@ if __name__ == "__main__":
     # a dictionary
     data = json.load(f)
 
-    # Iterating through the json
-    # listf
-    # for i in data[0]:
-    #     print(i)
+    misdetections = []
+
 
     for entry in data:
-        if entry['avg_height'] < 500:
-            print(entry['name'])
+        if (entry['avg_height'] < 500) and (entry['name'][:-2] not in misdetections):
+            misdetections.append(entry['name'][:-2])
+            # print(entry['name'])
+
+
+    print("Likely Misdetections: " + str((len(misdetections) / len(data)) * 100) + str("%") )
+    for i in misdetections : 
+        print(i)
 
     # Closing file
     f.close()
