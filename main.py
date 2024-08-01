@@ -4,6 +4,7 @@ import json
 import numpy as np
 
 from remap import *
+from rotate import * 
 
 def mask_yellow(image):
     # Convert BGR to HSV
@@ -54,6 +55,10 @@ def contours(image, filename):
     # Find Canny edges
     edged = cv2.Canny(image, 100, 200)
 
+    # cv2.imshow("Edges", edged)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+
     contours, hierarchy = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
     # Sort contours by area and top bottom difference in descending order 
@@ -64,21 +69,51 @@ def contours(image, filename):
     ret = np.array(np.zeros((2,4)))
 
     for idx, contour in enumerate(contours):
+
+        rotate_contour(image, contour, 90)
+
         # Calculate highest and lowest points of contour
         ext_top = tuple(contour[contour[:, :, 1].argmin()][0])
         ext_bot = tuple(contour[contour[:, :, 1].argmax()][0])
-        cv2.drawContours(image, [contour], -1, (255, 255, 0), thickness=10)
 
-        # cv2.imshow("im", image)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
+        # h_B, w_B = image.shape[:2]
+        # channels = image.shape[2] if len(image.shape) == 3 else 1
+        # blank_image = np.zeros((h_B, w_B, channels), dtype=image.dtype)
+
+        # cv2.drawContours(blank_image, [contour], -1, (255, 255, 0), thickness=10)
+        cv2.drawContours(image, [contour], -1, (255, 255, 0), thickness=10)
 
         # Draw dots on highest and lowest points
         cv2.circle(image, ext_top, 5, (0, 0, 255), -1)
         cv2.circle(image, ext_bot, 5, (0, 0, 255), -1)
-
-        # Calculate bounding rectangle
+    
+        # # Calculate bounding rectangle
         x, y, w, h = cv2.boundingRect(contour)
+        # channels = image.shape[2] if len(image.shape) == 3 else 1
+        # contour_img = np.zeros((h, w, channels), dtype=image.dtype)
+        # p = 50
+        # contour_img = blank_image[y-p:y+p+h, x-p:x+p+w]
+
+        # # Calculate the center of the contour
+        # M = cv2.moments(contour)
+        # if M['m00'] != 0:
+        #     center = (int(M['m10'] / M['m00']), int(M['m01'] / M['m00']))
+        # else:
+        #     # If the contour is a line (zero area), fall back to the first point as the center
+        #     center = tuple(contour[0][0])
+ 
+        # print(center)
+        # Draw a circle at the center of the contour
+        # cv2.circle(blank_image, center, radius=5, color=(255, 0, 0), thickness=20)
+
+
+        # cv2.imshow("blank w contour", blank_image)
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
+
+        # cv2.imshow("contour", contour_img)
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
 
         # Draw bounding rectangle
         cv2.rectangle(image, (x, y), (x+w, y+h), (255, 255, 0), thickness=10)
@@ -189,6 +224,8 @@ def main():
 
 
         print("Finished image: " + str(filename))
+
+        break
 
     # Write the image data to a JSON file
     output_file = 'image_data.json'
