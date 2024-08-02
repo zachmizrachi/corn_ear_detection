@@ -40,22 +40,21 @@ def rotate_main(image, contour, sweep, center=None):
     channels = image.shape[2] if len(image.shape) == 3 else 1
     blank_image = np.zeros((h+padding, w+padding, 3), dtype=image.dtype)
     offset_contour = contour - [x, y] + [int(padding/2), int(padding/2)]
-    cv2.drawContours(blank_image, [offset_contour], -1, (255, 255, 255), thickness=10)
+    # cv2.drawContours(blank_image, [offset_contour], -1, (255, 255, 255), thickness=10)
     offset = [int(padding/2), int(padding/2)]
-    cv2.rectangle(blank_image, tuple(offset), (offset[0] + w, offset[1] + h), (255, 255, 255), thickness=10)
+    # cv2.rectangle(blank_image, tuple(offset), (offset[0] + w, offset[1] + h), (255, 255, 255), thickness=10)
     
     blank_image, area = measure_area(offset, offset_contour, blank_image, h, w, True)
 
-    cv2.imshow("Original: " + str(area), blank_image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # cv2.imshow("Original: " + str(area), blank_image)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
     angle_area_dict = {}
 
     for angle in range(-sweep, sweep) : 
 
         rotated_contour = rotate_contour(contour, angle)
-
         x, y, w, h = cv2.boundingRect(rotated_contour)
         # channels = image.shape[2] if len(image.shape) == 3 else 1
         # blank_image = np.zeros((h+padding, w+padding, 3), dtype=image.dtype)
@@ -84,24 +83,21 @@ def rotate_main(image, contour, sweep, center=None):
     # Print the result
     print(f"The minimum area is {min_area} at angle {optimal_angle} degrees.")
 
-    rotated_contour = rotate_contour(contour, optimal_angle)
-
-    x, y, w, h = cv2.boundingRect(rotated_contour)
+    optimal_rotated_contour = rotate_contour(contour, optimal_angle)
+    
+    x, y, w, h = cv2.boundingRect(optimal_rotated_contour)
     channels = image.shape[2] if len(image.shape) == 3 else 1
     blank_image = np.zeros((h+padding, w+padding, 3), dtype=image.dtype)
-    rot_offset_contour = rotated_contour - [x, y] + [int(padding/2), int(padding/2)]
-    cv2.drawContours(blank_image, [rot_offset_contour], -1, (255,255,255), thickness=10)
+    opt_rot_offset_contour = optimal_rotated_contour - [x, y] + [int(padding/2), int(padding/2)]
+    # cv2.drawContours(blank_image, [opt_rot_offset_contour], -1, (255,255,255), thickness=10)
     offset = [int(padding/2), int(padding/2)]
-    cv2.rectangle(blank_image, tuple(offset), (offset[0] + w, offset[1] + h), (255, 255, 255), thickness=10)
+    # cv2.rectangle(blank_image, tuple(offset), (offset[0] + w, offset[1] + h), (255, 255, 255), thickness=10)
     # cv2.rectangle(blank_image, (x, y), (x+w, y+h), (255, 255, 0), thickness=10)
-
-    blank_image, area = measure_area(offset, rot_offset_contour, blank_image, h, w, True)
-
-    cv2.imshow("Optimal Rotation: " + str(min_area), blank_image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
-    return rotated_contour
+    blank_image, area = measure_area(offset, rot_offset_contour, blank_image, h, w, False)
+    # cv2.imshow("Optimal Rotation: " + str(min_area), blank_image)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    return optimal_rotated_contour
 
 
 def measure_area(offset, contour, image, h, w, draw) : 
@@ -122,7 +118,7 @@ def measure_area(offset, contour, image, h, w, draw) :
  
         # Draw circles at intersection points
         for intersection in intersections:
-            cv2.circle(image, intersection, 5, (255, 255, 255), 30)
+            if draw : cv2.circle(image, intersection, 5, (255, 255, 255), 30)
 
         # Calculate horizontal distances
         if len(intersections) > 1: 

@@ -70,7 +70,7 @@ def contours(image, filename):
 
     for idx, contour in enumerate(contours):
 
-        rotate_main(image, contour, 50)
+        opt_contour = rotate_main(image, contour, 10)
 
         # Calculate highest and lowest points of contour
         ext_top = tuple(contour[contour[:, :, 1].argmin()][0])
@@ -81,14 +81,15 @@ def contours(image, filename):
         # blank_image = np.zeros((h_B, w_B, channels), dtype=image.dtype)
 
         # cv2.drawContours(blank_image, [contour], -1, (255, 255, 0), thickness=10)
-        cv2.drawContours(image, [contour], -1, (255, 255, 0), thickness=10)
+        # cv2.drawContours(image, [contour], -1, (255, 255, 0), thickness=10)
+        cv2.drawContours(image, [opt_contour], -1, (255, 255, 0), thickness=10)
 
         # Draw dots on highest and lowest points
         cv2.circle(image, ext_top, 5, (0, 0, 255), -1)
         cv2.circle(image, ext_bot, 5, (0, 0, 255), -1)
     
         # # Calculate bounding rectangle
-        x, y, w, h = cv2.boundingRect(contour)
+        x, y, w, h = cv2.boundingRect(opt_contour)
         # channels = image.shape[2] if len(image.shape) == 3 else 1
         # contour_img = np.zeros((h, w, channels), dtype=image.dtype)
         # p = 50
@@ -111,7 +112,7 @@ def contours(image, filename):
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
-        # cv2.imshow("contour", contour_img)
+        # cv2.imshow("img", image)
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
@@ -127,7 +128,7 @@ def contours(image, filename):
 
             # Find intersection points of the line with the contour
             intersections = []
-            for pt in contour:
+            for pt in opt_contour:
                 if pt[0][1] == i:
                     if x <= pt[0][0] <= x + w:
                         intersections.append((pt[0][0], pt[0][1]))
@@ -150,7 +151,7 @@ def contours(image, filename):
 
             # Find intersection points of the line with the contour
             intersections = []
-            for pt in contour:
+            for pt in opt_contour:
                 if pt[0][0] == i:
                     if y <= pt[0][1] <= y + h:
                         intersections.append((pt[0][0], pt[0][1]))
@@ -225,8 +226,8 @@ def main():
 
         print("Finished image: " + str(filename))
 
-        if idx==5 : 
-            break
+        # if idx==2 : 
+        #     break
 
     # Write the image data to a JSON file
     output_file = 'image_data.json'

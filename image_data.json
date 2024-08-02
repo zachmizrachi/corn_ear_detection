@@ -1,24 +1,24 @@
 [
     {
         "name": "IMG_9886.jpeg_0",
-        "avg_width": 523.5,
-        "max_width": 711.0,
-        "avg_height": 2271.6363636363635,
+        "avg_width": 522.9,
+        "max_width": 679.0,
+        "avg_height": 2500.7272727272725,
         "max_height": 3240.0
     },
     {
         "name": "IMG_9886.jpeg_1",
-        "avg_width": 532.9090909090909,
-        "max_width": 754.0,
-        "avg_height": 2102.3636363636365,
-        "max_height": 2883.0
+        "avg_width": 574.8888888888889,
+        "max_width": 731.0,
+        "avg_height": 2167.3636363636365,
+        "max_height": 2884.0
     },
     {
         "name": "IMG_9740.jpeg_0",
-        "avg_width": 436.3636363636364,
-        "max_width": 653.0,
-        "avg_height": 2116.818181818182,
-        "max_height": 3031.0
+        "avg_width": 488.55555555555554,
+        "max_width": 660.0,
+        "avg_height": 1973.4,
+        "max_height": 3034.0
     },
     {
         "name": "IMG_9740.jpeg_1",
@@ -29,38 +29,38 @@
     },
     {
         "name": "IMG_9605.jpeg_0",
-        "avg_width": 394.90909090909093,
-        "max_width": 600.0,
-        "avg_height": 2530.8,
-        "max_height": 3767.0
+        "avg_width": 440.9,
+        "max_width": 622.0,
+        "avg_height": 2163.2727272727275,
+        "max_height": 3766.0
     },
     {
         "name": "IMG_9605.jpeg_1",
-        "avg_width": 429.8181818181818,
-        "max_width": 698.0,
-        "avg_height": 2257.5454545454545,
-        "max_height": 3537.0
+        "avg_width": 480.9,
+        "max_width": 630.0,
+        "avg_height": 2703.2,
+        "max_height": 3538.0
     },
     {
         "name": "IMG_9652.jpeg_0",
-        "avg_width": 441.6363636363636,
-        "max_width": 747.0,
-        "avg_height": 2070.3636363636365,
-        "max_height": 3379.0
+        "avg_width": 470.9,
+        "max_width": 655.0,
+        "avg_height": 2578.3,
+        "max_height": 3380.0
     },
     {
         "name": "IMG_9652.jpeg_1",
-        "avg_width": 453.7,
-        "max_width": 632.0,
-        "avg_height": 2044.8181818181818,
+        "avg_width": 444.55555555555554,
+        "max_width": 614.0,
+        "avg_height": 2102.7272727272725,
         "max_height": 3010.0
     },
     {
         "name": "IMG_9916.jpeg_0",
-        "avg_width": 490.0,
-        "max_width": 727.0,
-        "avg_height": 2088.6363636363635,
-        "max_height": 3046.0
+        "avg_width": 531.7,
+        "max_width": 754.0,
+        "avg_height": 1860.0,
+        "max_height": 3050.0
     },
     {
         "name": "IMG_9916.jpeg_1",
@@ -71,16 +71,1724 @@
     },
     {
         "name": "IMG_9853.jpeg_0",
-        "avg_width": 466.27272727272725,
-        "max_width": 669.0,
-        "avg_height": 2834.5454545454545,
-        "max_height": 3798.0
+        "avg_width": 465.1818181818182,
+        "max_width": 655.0,
+        "avg_height": 3067.090909090909,
+        "max_height": 3797.0
     },
     {
         "name": "IMG_9853.jpeg_1",
-        "avg_width": 426.8181818181818,
-        "max_width": 602.0,
-        "avg_height": 2447.181818181818,
-        "max_height": 3794.0
+        "avg_width": 427.54545454545456,
+        "max_width": 591.0,
+        "avg_height": 2428.2727272727275,
+        "max_height": 3795.0
+    },
+    {
+        "name": "IMG_9783.jpeg_0",
+        "avg_width": 526.1,
+        "max_width": 738.0,
+        "avg_height": 2008.5,
+        "max_height": 3180.0
+    },
+    {
+        "name": "IMG_9783.jpeg_1",
+        "avg_width": 503.7,
+        "max_width": 680.0,
+        "avg_height": 2119.6666666666665,
+        "max_height": 2830.0
+    },
+    {
+        "name": "IMG_9957.jpeg_0",
+        "avg_width": 439.72727272727275,
+        "max_width": 624.0,
+        "avg_height": 2373.0,
+        "max_height": 3247.0
+    },
+    {
+        "name": "IMG_9957.jpeg_1",
+        "avg_width": 468.6363636363636,
+        "max_width": 651.0,
+        "avg_height": 2208.4,
+        "max_height": 3112.0
+    },
+    {
+        "name": "IMG_9812.jpeg_0",
+        "avg_width": 494.5,
+        "max_width": 676.0,
+        "avg_height": 2134.7272727272725,
+        "max_height": 3052.0
+    },
+    {
+        "name": "IMG_9812.jpeg_1",
+        "avg_width": 465.8,
+        "max_width": 606.0,
+        "avg_height": 1849.2727272727273,
+        "max_height": 2570.0
+    },
+    {
+        "name": "IMG_9668.jpeg_0",
+        "avg_width": 476.3,
+        "max_width": 650.0,
+        "avg_height": 2716.2,
+        "max_height": 3590.0
+    },
+    {
+        "name": "IMG_9668.jpeg_1",
+        "avg_width": 485.6,
+        "max_width": 600.0,
+        "avg_height": 2252.7,
+        "max_height": 2740.0
+    },
+    {
+        "name": "IMG_9687.jpeg_0",
+        "avg_width": 521.2222222222222,
+        "max_width": 678.0,
+        "avg_height": 2292.4,
+        "max_height": 3680.0
+    },
+    {
+        "name": "IMG_9687.jpeg_1",
+        "avg_width": 438.2,
+        "max_width": 637.0,
+        "avg_height": 2587.818181818182,
+        "max_height": 3586.0
+    },
+    {
+        "name": "IMG_9865.jpeg_0",
+        "avg_width": 510.5,
+        "max_width": 687.0,
+        "avg_height": 2189.2,
+        "max_height": 3130.0
+    },
+    {
+        "name": "IMG_9865.jpeg_1",
+        "avg_width": 499.72727272727275,
+        "max_width": 668.0,
+        "avg_height": 2157.7272727272725,
+        "max_height": 2988.0
+    },
+    {
+        "name": "IMG_9520.jpeg_0",
+        "avg_width": 473.6,
+        "max_width": 748.0,
+        "avg_height": 2461.4,
+        "max_height": 3805.0
+    },
+    {
+        "name": "IMG_9520.jpeg_1",
+        "avg_width": 462.90909090909093,
+        "max_width": 642.0,
+        "avg_height": 2662.3,
+        "max_height": 3727.0
+    },
+    {
+        "name": "IMG_9577.jpeg_0",
+        "avg_width": 519.3,
+        "max_width": 726.0,
+        "avg_height": 2109.0,
+        "max_height": 3500.0
+    },
+    {
+        "name": "IMG_9577.jpeg_1",
+        "avg_width": 486.8,
+        "max_width": 627.0,
+        "avg_height": 2482.2727272727275,
+        "max_height": 3320.0
+    },
+    {
+        "name": "IMG_9824.jpeg_0",
+        "avg_width": 547.8,
+        "max_width": 736.0,
+        "avg_height": 2256.090909090909,
+        "max_height": 3170.0
+    },
+    {
+        "name": "IMG_9824.jpeg_1",
+        "avg_width": 493.72727272727275,
+        "max_width": 698.0,
+        "avg_height": 2297.2727272727275,
+        "max_height": 3068.0
+    },
+    {
+        "name": "IMG_9625.jpeg_0",
+        "avg_width": 446.0,
+        "max_width": 630.0,
+        "avg_height": 3076.2,
+        "max_height": 3894.0
+    },
+    {
+        "name": "IMG_9625.jpeg_1",
+        "avg_width": 427.9,
+        "max_width": 545.0,
+        "avg_height": 2299.6363636363635,
+        "max_height": 3140.0
+    },
+    {
+        "name": "IMG_9737.jpeg_0",
+        "avg_width": 559.6,
+        "max_width": 756.0,
+        "avg_height": 2208.5,
+        "max_height": 2802.0
+    },
+    {
+        "name": "IMG_9737.jpeg_1",
+        "avg_width": 594.6,
+        "max_width": 1011.0,
+        "avg_height": 1587.4545454545455,
+        "max_height": 2710.0
+    },
+    {
+        "name": "IMG_9721.jpeg_0",
+        "avg_width": 478.8181818181818,
+        "max_width": 704.0,
+        "avg_height": 2705.0,
+        "max_height": 3745.0
+    },
+    {
+        "name": "IMG_9721.jpeg_1",
+        "avg_width": 476.3636363636364,
+        "max_width": 684.0,
+        "avg_height": 2682.2727272727275,
+        "max_height": 3411.0
+    },
+    {
+        "name": "IMG_9799.jpeg_0",
+        "avg_width": 577.4444444444445,
+        "max_width": 705.0,
+        "avg_height": 2451.4545454545455,
+        "max_height": 3360.0
+    },
+    {
+        "name": "IMG_9799.jpeg_1",
+        "avg_width": 521.7,
+        "max_width": 724.0,
+        "avg_height": 2202.4,
+        "max_height": 3140.0
+    },
+    {
+        "name": "IMG_9665.jpeg_0",
+        "avg_width": 438.5,
+        "max_width": 648.0,
+        "avg_height": 2606.181818181818,
+        "max_height": 3451.0
+    },
+    {
+        "name": "IMG_9665.jpeg_1",
+        "avg_width": 473.5,
+        "max_width": 597.0,
+        "avg_height": 2268.090909090909,
+        "max_height": 2970.0
+    },
+    {
+        "name": "IMG_9809.jpeg_0",
+        "avg_width": 529.4444444444445,
+        "max_width": 664.0,
+        "avg_height": 2477.2727272727275,
+        "max_height": 3391.0
+    },
+    {
+        "name": "IMG_9809.jpeg_1",
+        "avg_width": 503.2,
+        "max_width": 666.0,
+        "avg_height": 2047.090909090909,
+        "max_height": 2800.0
+    },
+    {
+        "name": "IMG_9761.jpeg_0",
+        "avg_width": 613.6666666666666,
+        "max_width": 748.0,
+        "avg_height": 2040.5555555555557,
+        "max_height": 3071.0
+    },
+    {
+        "name": "IMG_9761.jpeg_1",
+        "avg_width": 559.7777777777778,
+        "max_width": 748.0,
+        "avg_height": 1992.0,
+        "max_height": 2849.0
+    },
+    {
+        "name": "IMG_9599.jpeg_0",
+        "avg_width": 465.0,
+        "max_width": 631.0,
+        "avg_height": 2691.909090909091,
+        "max_height": 3710.0
+    },
+    {
+        "name": "IMG_9599.jpeg_1",
+        "avg_width": 506.8888888888889,
+        "max_width": 711.0,
+        "avg_height": 2336.3636363636365,
+        "max_height": 3465.0
+    },
+    {
+        "name": "IMG_9937.jpeg_0",
+        "avg_width": 499.3,
+        "max_width": 640.0,
+        "avg_height": 2713.0,
+        "max_height": 3310.0
+    },
+    {
+        "name": "IMG_9937.jpeg_1",
+        "avg_width": 478.8,
+        "max_width": 640.0,
+        "avg_height": 2298.2,
+        "max_height": 2991.0
+    },
+    {
+        "name": "IMG_9608.jpeg_0",
+        "avg_width": 522.1111111111111,
+        "max_width": 630.0,
+        "avg_height": 2532.4444444444443,
+        "max_height": 3330.0
+    },
+    {
+        "name": "IMG_9608.jpeg_1",
+        "avg_width": 437.90909090909093,
+        "max_width": 598.0,
+        "avg_height": 2488.2727272727275,
+        "max_height": 3303.0
+    },
+    {
+        "name": "IMG_9999.jpeg_0",
+        "avg_width": 482.8181818181818,
+        "max_width": 671.0,
+        "avg_height": 2580.5454545454545,
+        "max_height": 3464.0
+    },
+    {
+        "name": "IMG_9999.jpeg_1",
+        "avg_width": 486.9,
+        "max_width": 658.0,
+        "avg_height": 2392.9,
+        "max_height": 3333.0
+    },
+    {
+        "name": "IMG_9649.jpeg_0",
+        "avg_width": 435.8181818181818,
+        "max_width": 633.0,
+        "avg_height": 2606.0,
+        "max_height": 3643.0
+    },
+    {
+        "name": "IMG_9649.jpeg_1",
+        "avg_width": 448.90909090909093,
+        "max_width": 629.0,
+        "avg_height": 2169.909090909091,
+        "max_height": 2757.0
+    },
+    {
+        "name": "IMG_9901.jpeg_0",
+        "avg_width": 600.3333333333334,
+        "max_width": 718.0,
+        "avg_height": 2424.3333333333335,
+        "max_height": 3470.0
+    },
+    {
+        "name": "IMG_9901.jpeg_1",
+        "avg_width": 492.45454545454544,
+        "max_width": 697.0,
+        "avg_height": 2463.090909090909,
+        "max_height": 3367.0
+    },
+    {
+        "name": "IMG_9844.jpeg_0",
+        "avg_width": 508.4,
+        "max_width": 745.0,
+        "avg_height": 2042.1,
+        "max_height": 2830.0
+    },
+    {
+        "name": "IMG_9844.jpeg_1",
+        "avg_width": 478.90909090909093,
+        "max_width": 689.0,
+        "avg_height": 2006.3636363636363,
+        "max_height": 2799.0
+    },
+    {
+        "name": "IMG_9690.jpeg_0",
+        "avg_width": 470.7,
+        "max_width": 672.0,
+        "avg_height": 2209.5454545454545,
+        "max_height": 3401.0
+    },
+    {
+        "name": "IMG_9690.jpeg_1",
+        "avg_width": 456.90909090909093,
+        "max_width": 639.0,
+        "avg_height": 2492.5454545454545,
+        "max_height": 3372.0
+    },
+    {
+        "name": "IMG_9628.jpeg_0",
+        "avg_width": 513.9,
+        "max_width": 711.0,
+        "avg_height": 2498.0,
+        "max_height": 3610.0
+    },
+    {
+        "name": "IMG_9628.jpeg_1",
+        "avg_width": 503.2,
+        "max_width": 648.0,
+        "avg_height": 2217.5454545454545,
+        "max_height": 3288.0
+    },
+    {
+        "name": "IMG_9612.jpeg_0",
+        "avg_width": 516.7,
+        "max_width": 712.0,
+        "avg_height": 2646.3,
+        "max_height": 3520.0
+    },
+    {
+        "name": "IMG_9612.jpeg_1",
+        "avg_width": 465.09090909090907,
+        "max_width": 619.0,
+        "avg_height": 2448.909090909091,
+        "max_height": 3009.0
+    },
+    {
+        "name": "IMG_9868.jpeg_0",
+        "avg_width": 524.0,
+        "max_width": 681.0,
+        "avg_height": 2464.8,
+        "max_height": 3082.0
+    },
+    {
+        "name": "IMG_9868.jpeg_1",
+        "avg_width": 464.0,
+        "max_width": 653.0,
+        "avg_height": 1974.4545454545455,
+        "max_height": 2930.0
+    },
+    {
+        "name": "IMG_9700.jpeg_0",
+        "avg_width": 465.8181818181818,
+        "max_width": 658.0,
+        "avg_height": 3113.9,
+        "max_height": 3803.0
+    },
+    {
+        "name": "IMG_9700.jpeg_1",
+        "avg_width": 506.2,
+        "max_width": 647.0,
+        "avg_height": 2432.818181818182,
+        "max_height": 3320.0
+    },
+    {
+        "name": "IMG_9619.jpeg_0",
+        "avg_width": 455.27272727272725,
+        "max_width": 630.0,
+        "avg_height": 3099.5,
+        "max_height": 3867.0
+    },
+    {
+        "name": "IMG_9619.jpeg_1",
+        "avg_width": 510.8,
+        "max_width": 684.0,
+        "avg_height": 2616.181818181818,
+        "max_height": 3691.0
+    },
+    {
+        "name": "IMG_9571.jpeg_0",
+        "avg_width": 544.7,
+        "max_width": 711.0,
+        "avg_height": 2432.0,
+        "max_height": 3390.0
+    },
+    {
+        "name": "IMG_9571.jpeg_1",
+        "avg_width": 508.2,
+        "max_width": 674.0,
+        "avg_height": 2459.4545454545455,
+        "max_height": 3300.0
+    },
+    {
+        "name": "IMG_9859.jpeg_0",
+        "avg_width": 465.1818181818182,
+        "max_width": 667.0,
+        "avg_height": 2128.818181818182,
+        "max_height": 2822.0
+    },
+    {
+        "name": "IMG_9859.jpeg_1",
+        "avg_width": 436.3636363636364,
+        "max_width": 612.0,
+        "avg_height": 1853.6363636363637,
+        "max_height": 2511.0
+    },
+    {
+        "name": "IMG_9662.jpeg_0",
+        "avg_width": 426.1818181818182,
+        "max_width": 617.0,
+        "avg_height": 2816.4545454545455,
+        "max_height": 3694.0
+    },
+    {
+        "name": "IMG_9662.jpeg_1",
+        "avg_width": 471.0,
+        "max_width": 658.0,
+        "avg_height": 2599.6363636363635,
+        "max_height": 3600.0
+    },
+    {
+        "name": "IMG_9727.jpeg_0",
+        "avg_width": 412.3,
+        "max_width": 591.0,
+        "avg_height": 2417.5454545454545,
+        "max_height": 3600.0
+    },
+    {
+        "name": "IMG_9727.jpeg_1",
+        "avg_width": 421.27272727272725,
+        "max_width": 605.0,
+        "avg_height": 2520.2727272727275,
+        "max_height": 3364.0
+    },
+    {
+        "name": "IMG_9818.jpeg_0",
+        "avg_width": 467.8,
+        "max_width": 618.0,
+        "avg_height": 2245.222222222222,
+        "max_height": 3316.0
+    },
+    {
+        "name": "IMG_9818.jpeg_1",
+        "avg_width": 568.4,
+        "max_width": 783.0,
+        "avg_height": 2146.2727272727275,
+        "max_height": 3190.0
+    },
+    {
+        "name": "IMG_9838.jpeg_0",
+        "avg_width": 490.72727272727275,
+        "max_width": 690.0,
+        "avg_height": 2638.8,
+        "max_height": 3268.0
+    },
+    {
+        "name": "IMG_9838.jpeg_1",
+        "avg_width": 518.7,
+        "max_width": 655.0,
+        "avg_height": 2178.6363636363635,
+        "max_height": 2930.0
+    },
+    {
+        "name": "IMG_9615.jpeg_0",
+        "avg_width": 440.9,
+        "max_width": 638.0,
+        "avg_height": 2656.3636363636365,
+        "max_height": 3704.0
+    },
+    {
+        "name": "IMG_9615.jpeg_1",
+        "avg_width": 442.1818181818182,
+        "max_width": 620.0,
+        "avg_height": 2954.6,
+        "max_height": 3669.0
+    },
+    {
+        "name": "IMG_9879.jpeg_0",
+        "avg_width": 563.7,
+        "max_width": 683.0,
+        "avg_height": 2294.4545454545455,
+        "max_height": 3068.0
+    },
+    {
+        "name": "IMG_9879.jpeg_1",
+        "avg_width": 550.0,
+        "max_width": 672.0,
+        "avg_height": 2163.909090909091,
+        "max_height": 2830.0
+    },
+    {
+        "name": "IMG_9746.jpeg_0",
+        "avg_width": 508.5,
+        "max_width": 683.0,
+        "avg_height": 2219.5454545454545,
+        "max_height": 3200.0
+    },
+    {
+        "name": "IMG_9746.jpeg_1",
+        "avg_width": 424.27272727272725,
+        "max_width": 639.0,
+        "avg_height": 2117.6363636363635,
+        "max_height": 3014.0
+    },
+    {
+        "name": "IMG_9984.jpeg_0",
+        "avg_width": 449.5,
+        "max_width": 624.0,
+        "avg_height": 2084.2727272727275,
+        "max_height": 3010.0
+    },
+    {
+        "name": "IMG_9984.jpeg_1",
+        "avg_width": 509.4,
+        "max_width": 669.0,
+        "avg_height": 2063.3,
+        "max_height": 2635.0
+    },
+    {
+        "name": "IMG_9910.jpeg_0",
+        "avg_width": 483.09090909090907,
+        "max_width": 745.0,
+        "avg_height": 2369.7272727272725,
+        "max_height": 3408.0
+    },
+    {
+        "name": "IMG_9910.jpeg_1",
+        "avg_width": 614.4,
+        "max_width": 804.0,
+        "avg_height": 2139.4,
+        "max_height": 3090.0
+    },
+    {
+        "name": "IMG_9785.jpeg_0",
+        "avg_width": 480.09090909090907,
+        "max_width": 686.0,
+        "avg_height": 2324.7272727272725,
+        "max_height": 3259.0
+    },
+    {
+        "name": "IMG_9785.jpeg_1",
+        "avg_width": 0.0,
+        "max_width": 0.0,
+        "avg_height": 0.0,
+        "max_height": 0.0
+    },
+    {
+        "name": "IMG_9802.jpeg_0",
+        "avg_width": 528.7272727272727,
+        "max_width": 730.0,
+        "avg_height": 2625.9,
+        "max_height": 3318.0
+    },
+    {
+        "name": "IMG_9802.jpeg_1",
+        "avg_width": 542.9,
+        "max_width": 704.0,
+        "avg_height": 2190.7272727272725,
+        "max_height": 3040.0
+    },
+    {
+        "name": "IMG_9793.jpeg_0",
+        "avg_width": 574.0,
+        "max_width": 783.0,
+        "avg_height": 2057.4545454545455,
+        "max_height": 2960.0
+    },
+    {
+        "name": "IMG_9793.jpeg_1",
+        "avg_width": 575.1111111111111,
+        "max_width": 705.0,
+        "avg_height": 2080.2727272727275,
+        "max_height": 2960.0
+    },
+    {
+        "name": "IMG_9907.jpeg_0",
+        "avg_width": 422.90909090909093,
+        "max_width": 634.0,
+        "avg_height": 2200.2727272727275,
+        "max_height": 3117.0
+    },
+    {
+        "name": "IMG_9907.jpeg_1",
+        "avg_width": 450.9,
+        "max_width": 603.0,
+        "avg_height": 2033.6363636363637,
+        "max_height": 2793.0
+    },
+    {
+        "name": "IMG_9546.jpeg_0",
+        "avg_width": 519.5,
+        "max_width": 675.0,
+        "avg_height": 2845.3636363636365,
+        "max_height": 3880.0
+    },
+    {
+        "name": "IMG_9546.jpeg_1",
+        "avg_width": 481.54545454545456,
+        "max_width": 667.0,
+        "avg_height": 2842.818181818182,
+        "max_height": 3754.0
+    },
+    {
+        "name": "IMG_9815.jpeg_0",
+        "avg_width": 559.0,
+        "max_width": 760.0,
+        "avg_height": 2084.8,
+        "max_height": 3050.0
+    },
+    {
+        "name": "IMG_9815.jpeg_1",
+        "avg_width": 530.7,
+        "max_width": 680.0,
+        "avg_height": 2371.6,
+        "max_height": 3039.0
+    },
+    {
+        "name": "IMG_9679.jpeg_0",
+        "avg_width": 497.45454545454544,
+        "max_width": 700.0,
+        "avg_height": 3040.0,
+        "max_height": 3743.0
+    },
+    {
+        "name": "IMG_9679.jpeg_1",
+        "avg_width": 505.5,
+        "max_width": 662.0,
+        "avg_height": 2619.5454545454545,
+        "max_height": 3530.0
+    },
+    {
+        "name": "IMG_9946.jpeg_0",
+        "avg_width": 480.27272727272725,
+        "max_width": 623.0,
+        "avg_height": 2711.5454545454545,
+        "max_height": 3465.0
+    },
+    {
+        "name": "IMG_9946.jpeg_1",
+        "avg_width": 499.6,
+        "max_width": 614.0,
+        "avg_height": 2607.181818181818,
+        "max_height": 3370.0
+    },
+    {
+        "name": "IMG_9655.jpeg_0",
+        "avg_width": 494.7,
+        "max_width": 672.0,
+        "avg_height": 2268.5454545454545,
+        "max_height": 3340.0
+    },
+    {
+        "name": "IMG_9655.jpeg_1",
+        "avg_width": 494.1,
+        "max_width": 636.0,
+        "avg_height": 2452.909090909091,
+        "max_height": 3341.0
+    },
+    {
+        "name": "IMG_9602.jpeg_0",
+        "avg_width": 499.8,
+        "max_width": 655.0,
+        "avg_height": 2573.5454545454545,
+        "max_height": 3450.0
+    },
+    {
+        "name": "IMG_9602.jpeg_1",
+        "avg_width": 509.8,
+        "max_width": 723.0,
+        "avg_height": 2209.818181818182,
+        "max_height": 3400.0
+    },
+    {
+        "name": "IMG_9706.jpeg_0",
+        "avg_width": 479.27272727272725,
+        "max_width": 639.0,
+        "avg_height": 2205.909090909091,
+        "max_height": 2785.0
+    },
+    {
+        "name": "IMG_9706.jpeg_1",
+        "avg_width": 466.90909090909093,
+        "max_width": 616.0,
+        "avg_height": 2049.5454545454545,
+        "max_height": 2616.0
+    },
+    {
+        "name": "IMG_9993.jpeg_0",
+        "avg_width": 540.3333333333334,
+        "max_width": 661.0,
+        "avg_height": 2138.8,
+        "max_height": 3180.0
+    },
+    {
+        "name": "IMG_9993.jpeg_1",
+        "avg_width": 507.3,
+        "max_width": 642.0,
+        "avg_height": 2250.2727272727275,
+        "max_height": 3060.0
+    },
+    {
+        "name": "IMG_9634.jpeg_0",
+        "avg_width": 459.54545454545456,
+        "max_width": 664.0,
+        "avg_height": 2631.090909090909,
+        "max_height": 3555.0
+    },
+    {
+        "name": "IMG_9634.jpeg_1",
+        "avg_width": 395.0,
+        "max_width": 592.0,
+        "avg_height": 2298.909090909091,
+        "max_height": 3284.0
+    },
+    {
+        "name": "IMG_9771.jpeg_0",
+        "avg_width": 483.0,
+        "max_width": 667.0,
+        "avg_height": 2185.2727272727275,
+        "max_height": 2923.0
+    },
+    {
+        "name": "IMG_9771.jpeg_1",
+        "avg_width": 523.2,
+        "max_width": 707.0,
+        "avg_height": 1984.3636363636363,
+        "max_height": 2834.0
+    },
+    {
+        "name": "IMG_9675.jpeg_0",
+        "avg_width": 463.72727272727275,
+        "max_width": 646.0,
+        "avg_height": 2672.181818181818,
+        "max_height": 3569.0
+    },
+    {
+        "name": "IMG_9675.jpeg_1",
+        "avg_width": 453.8181818181818,
+        "max_width": 652.0,
+        "avg_height": 2500.6363636363635,
+        "max_height": 3495.0
+    },
+    {
+        "name": "IMG_9622.jpeg_0",
+        "avg_width": 380.09090909090907,
+        "max_width": 528.0,
+        "avg_height": 2386.3,
+        "max_height": 3163.0
+    },
+    {
+        "name": "IMG_9622.jpeg_1",
+        "avg_width": 369.45454545454544,
+        "max_width": 548.0,
+        "avg_height": 2258.7272727272725,
+        "max_height": 3073.0
+    },
+    {
+        "name": "IMG_9659.jpeg_0",
+        "avg_width": 449.4,
+        "max_width": 580.0,
+        "avg_height": 2866.5,
+        "max_height": 3660.0
+    },
+    {
+        "name": "IMG_9659.jpeg_1",
+        "avg_width": 420.72727272727275,
+        "max_width": 609.0,
+        "avg_height": 2672.5454545454545,
+        "max_height": 3637.0
+    },
+    {
+        "name": "IMG_9862.jpeg_0",
+        "avg_width": 485.1818181818182,
+        "max_width": 659.0,
+        "avg_height": 2293.5454545454545,
+        "max_height": 3089.0
+    },
+    {
+        "name": "IMG_9862.jpeg_1",
+        "avg_width": 546.1111111111111,
+        "max_width": 678.0,
+        "avg_height": 2054.3,
+        "max_height": 2910.0
+    },
+    {
+        "name": "IMG_9589.jpeg_0",
+        "avg_width": 449.9,
+        "max_width": 605.0,
+        "avg_height": 2662.4545454545455,
+        "max_height": 3596.0
+    },
+    {
+        "name": "IMG_9589.jpeg_1",
+        "avg_width": 490.0,
+        "max_width": 637.0,
+        "avg_height": 2275.7272727272725,
+        "max_height": 3420.0
+    },
+    {
+        "name": "IMG_9949.jpeg_0",
+        "avg_width": 499.7,
+        "max_width": 649.0,
+        "avg_height": 2527.4545454545455,
+        "max_height": 3370.0
+    },
+    {
+        "name": "IMG_9949.jpeg_1",
+        "avg_width": 519.3636363636364,
+        "max_width": 698.0,
+        "avg_height": 2652.5454545454545,
+        "max_height": 3232.0
+    },
+    {
+        "name": "IMG_9898.jpeg_0",
+        "avg_width": 569.2,
+        "max_width": 784.0,
+        "avg_height": 1989.909090909091,
+        "max_height": 3211.0
+    },
+    {
+        "name": "IMG_9898.jpeg_1",
+        "avg_width": 558.2,
+        "max_width": 713.0,
+        "avg_height": 1996.6363636363637,
+        "max_height": 2748.0
+    },
+    {
+        "name": "IMG_9932.jpeg_0",
+        "avg_width": 430.8181818181818,
+        "max_width": 607.0,
+        "avg_height": 2715.6,
+        "max_height": 3279.0
+    },
+    {
+        "name": "IMG_9932.jpeg_1",
+        "avg_width": 413.3636363636364,
+        "max_width": 585.0,
+        "avg_height": 2185.5454545454545,
+        "max_height": 2938.0
+    },
+    {
+        "name": "IMG_9524.jpeg_0",
+        "avg_width": 478.6,
+        "max_width": 683.0,
+        "avg_height": 2028.111111111111,
+        "max_height": 3360.0
+    },
+    {
+        "name": "IMG_9524.jpeg_1",
+        "avg_width": 461.1,
+        "max_width": 626.0,
+        "avg_height": 1973.0,
+        "max_height": 3188.0
+    },
+    {
+        "name": "IMG_9532.jpeg_0",
+        "avg_width": 458.5,
+        "max_width": 624.0,
+        "avg_height": 2893.9,
+        "max_height": 3730.0
+    },
+    {
+        "name": "IMG_9532.jpeg_1",
+        "avg_width": 441.2,
+        "max_width": 599.0,
+        "avg_height": 2460.8,
+        "max_height": 3470.0
+    },
+    {
+        "name": "IMG_9565.jpeg_0",
+        "avg_width": 507.5,
+        "max_width": 680.0,
+        "avg_height": 2886.7,
+        "max_height": 3560.0
+    },
+    {
+        "name": "IMG_9565.jpeg_1",
+        "avg_width": 461.4,
+        "max_width": 648.0,
+        "avg_height": 2373.5454545454545,
+        "max_height": 3550.0
+    },
+    {
+        "name": "IMG_9709.jpeg_0",
+        "avg_width": 428.27272727272725,
+        "max_width": 629.0,
+        "avg_height": 2573.6,
+        "max_height": 3693.0
+    },
+    {
+        "name": "IMG_9709.jpeg_1",
+        "avg_width": 456.1,
+        "max_width": 581.0,
+        "avg_height": 2206.7272727272725,
+        "max_height": 3370.0
+    },
+    {
+        "name": "IMG_9841.jpeg_0",
+        "avg_width": 606.0,
+        "max_width": 729.0,
+        "avg_height": 2276.4545454545455,
+        "max_height": 3180.0
+    },
+    {
+        "name": "IMG_9841.jpeg_1",
+        "avg_width": 523.6363636363636,
+        "max_width": 741.0,
+        "avg_height": 2041.9,
+        "max_height": 2988.0
+    },
+    {
+        "name": "IMG_9904.jpeg_0",
+        "avg_width": 515.9,
+        "max_width": 697.0,
+        "avg_height": 2033.4545454545455,
+        "max_height": 2890.0
+    },
+    {
+        "name": "IMG_9904.jpeg_1",
+        "avg_width": 485.125,
+        "max_width": 775.0,
+        "avg_height": 1680.090909090909,
+        "max_height": 2681.0
+    },
+    {
+        "name": "IMG_9768.jpeg_0",
+        "avg_width": 524.0909090909091,
+        "max_width": 716.0,
+        "avg_height": 2441.181818181818,
+        "max_height": 3305.0
+    },
+    {
+        "name": "IMG_9768.jpeg_1",
+        "avg_width": 536.0,
+        "max_width": 728.0,
+        "avg_height": 2422.6363636363635,
+        "max_height": 3274.0
+    },
+    {
+        "name": "IMG_9787.jpeg_0",
+        "avg_width": 526.2,
+        "max_width": 685.0,
+        "avg_height": 2077.0,
+        "max_height": 2830.0
+    },
+    {
+        "name": "IMG_9787.jpeg_1",
+        "avg_width": 569.1111111111111,
+        "max_width": 724.0,
+        "avg_height": 1968.6363636363637,
+        "max_height": 2730.0
+    },
+    {
+        "name": "IMG_9752.jpeg_0",
+        "avg_width": 462.0,
+        "max_width": 638.0,
+        "avg_height": 2202.1,
+        "max_height": 3033.0
+    },
+    {
+        "name": "IMG_9752.jpeg_1",
+        "avg_width": 504.4,
+        "max_width": 627.0,
+        "avg_height": 2216.181818181818,
+        "max_height": 2882.0
+    },
+    {
+        "name": "IMG_9990.jpeg_0",
+        "avg_width": 469.8181818181818,
+        "max_width": 642.0,
+        "avg_height": 2458.818181818182,
+        "max_height": 3164.0
+    },
+    {
+        "name": "IMG_9990.jpeg_1",
+        "avg_width": 437.6363636363636,
+        "max_width": 587.0,
+        "avg_height": 1889.909090909091,
+        "max_height": 2394.0
+    },
+    {
+        "name": "IMG_9568.jpeg_0",
+        "avg_width": 508.8,
+        "max_width": 675.0,
+        "avg_height": 2700.6363636363635,
+        "max_height": 3660.0
+    },
+    {
+        "name": "IMG_9568.jpeg_1",
+        "avg_width": 524.3333333333334,
+        "max_width": 630.0,
+        "avg_height": 2639.4,
+        "max_height": 3410.0
+    },
+    {
+        "name": "IMG_9883.jpeg_0",
+        "avg_width": 532.3333333333334,
+        "max_width": 686.0,
+        "avg_height": 1923.6363636363637,
+        "max_height": 2911.0
+    },
+    {
+        "name": "IMG_9883.jpeg_1",
+        "avg_width": 471.8888888888889,
+        "max_width": 601.0,
+        "avg_height": 2017.2,
+        "max_height": 2827.0
+    },
+    {
+        "name": "IMG_9929.jpeg_0",
+        "avg_width": 481.3,
+        "max_width": 644.0,
+        "avg_height": 2073.6666666666665,
+        "max_height": 3060.0
+    },
+    {
+        "name": "IMG_9929.jpeg_1",
+        "avg_width": 513.8,
+        "max_width": 659.0,
+        "avg_height": 2166.6363636363635,
+        "max_height": 2900.0
+    },
+    {
+        "name": "IMG_9895.jpeg_0",
+        "avg_width": 562.0,
+        "max_width": 730.0,
+        "avg_height": 2624.6,
+        "max_height": 3300.0
+    },
+    {
+        "name": "IMG_9895.jpeg_1",
+        "avg_width": 596.8888888888889,
+        "max_width": 730.0,
+        "avg_height": 2380.5555555555557,
+        "max_height": 3161.0
+    },
+    {
+        "name": "IMG_9529.jpeg_0",
+        "avg_width": 510.45454545454544,
+        "max_width": 692.0,
+        "avg_height": 0.2727272727272727,
+        "max_height": 3862.0
+    },
+    {
+        "name": "IMG_9529.jpeg_1",
+        "avg_width": 518.8,
+        "max_width": 661.0,
+        "avg_height": 2774.2727272727275,
+        "max_height": 3790.0
+    },
+    {
+        "name": "IMG_9987.jpeg_0",
+        "avg_width": 480.09090909090907,
+        "max_width": 664.0,
+        "avg_height": 2187.7272727272725,
+        "max_height": 3038.0
+    },
+    {
+        "name": "IMG_9987.jpeg_1",
+        "avg_width": 449.54545454545456,
+        "max_width": 617.0,
+        "avg_height": 2148.6363636363635,
+        "max_height": 2886.0
+    },
+    {
+        "name": "IMG_9657.jpeg_0",
+        "avg_width": 521.0,
+        "max_width": 630.0,
+        "avg_height": 3022.9,
+        "max_height": 3800.0
+    },
+    {
+        "name": "IMG_9657.jpeg_1",
+        "avg_width": 425.72727272727275,
+        "max_width": 605.0,
+        "avg_height": 2903.909090909091,
+        "max_height": 3773.0
+    },
+    {
+        "name": "IMG_9712.jpeg_0",
+        "avg_width": 420.1,
+        "max_width": 614.0,
+        "avg_height": 2328.181818181818,
+        "max_height": 3530.0
+    },
+    {
+        "name": "IMG_9712.jpeg_1",
+        "avg_width": 402.27272727272725,
+        "max_width": 558.0,
+        "avg_height": 2354.5,
+        "max_height": 3251.0
+    },
+    {
+        "name": "IMG_9856.jpeg_0",
+        "avg_width": 570.0,
+        "max_width": 723.0,
+        "avg_height": 2224.818181818182,
+        "max_height": 3337.0
+    },
+    {
+        "name": "IMG_9856.jpeg_1",
+        "avg_width": 531.5454545454545,
+        "max_width": 734.0,
+        "avg_height": 2435.7272727272725,
+        "max_height": 3319.0
+    },
+    {
+        "name": "IMG_9913.jpeg_0",
+        "avg_width": 459.2,
+        "max_width": 676.0,
+        "avg_height": 2199.909090909091,
+        "max_height": 3235.0
+    },
+    {
+        "name": "IMG_9913.jpeg_1",
+        "avg_width": 501.2,
+        "max_width": 683.0,
+        "avg_height": 2279.7,
+        "max_height": 3180.0
+    },
+    {
+        "name": "IMG_9682.jpeg_0",
+        "avg_width": 486.3,
+        "max_width": 659.0,
+        "avg_height": 0.36363636363636365,
+        "max_height": 3711.0
+    },
+    {
+        "name": "IMG_9682.jpeg_1",
+        "avg_width": 435.6363636363636,
+        "max_width": 599.0,
+        "avg_height": 2599.0,
+        "max_height": 3494.0
+    },
+    {
+        "name": "IMG_9790.jpeg_0",
+        "avg_width": 449.72727272727275,
+        "max_width": 643.0,
+        "avg_height": 2490.0,
+        "max_height": 3432.0
+    },
+    {
+        "name": "IMG_9790.jpeg_1",
+        "avg_width": 536.1,
+        "max_width": 717.0,
+        "avg_height": 2222.222222222222,
+        "max_height": 3410.0
+    },
+    {
+        "name": "IMG_9972.jpeg_0",
+        "avg_width": 447.0,
+        "max_width": 654.0,
+        "avg_height": 2128.0,
+        "max_height": 2985.0
+    },
+    {
+        "name": "IMG_9972.jpeg_1",
+        "avg_width": 501.0,
+        "max_width": 633.0,
+        "avg_height": 1906.909090909091,
+        "max_height": 2620.0
+    },
+    {
+        "name": "IMG_9749.jpeg_0",
+        "avg_width": 471.8181818181818,
+        "max_width": 657.0,
+        "avg_height": 2528.5,
+        "max_height": 2984.0
+    },
+    {
+        "name": "IMG_9749.jpeg_1",
+        "avg_width": 514.4,
+        "max_width": 685.0,
+        "avg_height": 2056.2,
+        "max_height": 2900.0
+    },
+    {
+        "name": "IMG_9876.jpeg_0",
+        "avg_width": 467.1818181818182,
+        "max_width": 622.0,
+        "avg_height": 2336.181818181818,
+        "max_height": 3134.0
+    },
+    {
+        "name": "IMG_9876.jpeg_1",
+        "avg_width": 474.6,
+        "max_width": 637.0,
+        "avg_height": 2319.7272727272725,
+        "max_height": 3082.0
+    },
+    {
+        "name": "IMG_9821.jpeg_0",
+        "avg_width": 501.5,
+        "max_width": 760.0,
+        "avg_height": 2240.3,
+        "max_height": 3519.0
+    },
+    {
+        "name": "IMG_9821.jpeg_1",
+        "avg_width": 488.09090909090907,
+        "max_width": 701.0,
+        "avg_height": 2416.6363636363635,
+        "max_height": 3407.0
+    },
+    {
+        "name": "IMG_9765.jpeg_0",
+        "avg_width": 451.54545454545456,
+        "max_width": 635.0,
+        "avg_height": 2211.2727272727275,
+        "max_height": 3045.0
+    },
+    {
+        "name": "IMG_9765.jpeg_1",
+        "avg_width": 511.6,
+        "max_width": 676.0,
+        "avg_height": 1935.2727272727273,
+        "max_height": 3020.0
+    },
+    {
+        "name": "IMG_9724.jpeg_0",
+        "avg_width": 500.2,
+        "max_width": 658.0,
+        "avg_height": 2567.7272727272725,
+        "max_height": 3512.0
+    },
+    {
+        "name": "IMG_9724.jpeg_1",
+        "avg_width": 442.7,
+        "max_width": 589.0,
+        "avg_height": 2225.7,
+        "max_height": 3168.0
+    },
+    {
+        "name": "IMG_9847.jpeg_0",
+        "avg_width": 514.0,
+        "max_width": 680.0,
+        "avg_height": 2318.1111111111113,
+        "max_height": 3058.0
+    },
+    {
+        "name": "IMG_9847.jpeg_1",
+        "avg_width": 524.5555555555555,
+        "max_width": 673.0,
+        "avg_height": 1877.4,
+        "max_height": 2920.0
+    },
+    {
+        "name": "IMG_9806.jpeg_0",
+        "avg_width": 530.6,
+        "max_width": 737.0,
+        "avg_height": 2012.0,
+        "max_height": 2990.0
+    },
+    {
+        "name": "IMG_9806.jpeg_1",
+        "avg_width": 547.4,
+        "max_width": 694.0,
+        "avg_height": 2103.3,
+        "max_height": 2973.0
+    },
+    {
+        "name": "IMG_9555.jpeg_0",
+        "avg_width": 480.90909090909093,
+        "max_width": 665.0,
+        "avg_height": 2261.5454545454545,
+        "max_height": 3089.0
+    },
+    {
+        "name": "IMG_9555.jpeg_1",
+        "avg_width": 453.72727272727275,
+        "max_width": 642.0,
+        "avg_height": 2066.090909090909,
+        "max_height": 2887.0
+    },
+    {
+        "name": "IMG_9943.jpeg_0",
+        "avg_width": 671.875,
+        "max_width": 1319.0,
+        "avg_height": 452.09090909090907,
+        "max_height": 893.0
+    },
+    {
+        "name": "IMG_9943.jpeg_1",
+        "avg_width": 241.6,
+        "max_width": 406.0,
+        "avg_height": 0.09090909090909091,
+        "max_height": 800.0
+    },
+    {
+        "name": "IMG_9715.jpeg_0",
+        "avg_width": 442.9,
+        "max_width": 616.0,
+        "avg_height": 2525.181818181818,
+        "max_height": 3650.0
+    },
+    {
+        "name": "IMG_9715.jpeg_1",
+        "avg_width": 502.3333333333333,
+        "max_width": 626.0,
+        "avg_height": 2415.6,
+        "max_height": 3620.0
+    },
+    {
+        "name": "IMG_9892.jpeg_0",
+        "avg_width": 580.1111111111111,
+        "max_width": 785.0,
+        "avg_height": 1646.909090909091,
+        "max_height": 3000.0
+    },
+    {
+        "name": "IMG_9892.jpeg_1",
+        "avg_width": 588.8888888888889,
+        "max_width": 706.0,
+        "avg_height": 1851.6,
+        "max_height": 2670.0
+    },
+    {
+        "name": "IMG_9538.jpeg_0",
+        "avg_width": 407.5,
+        "max_width": 587.0,
+        "avg_height": 2637.181818181818,
+        "max_height": 3940.0
+    },
+    {
+        "name": "IMG_9538.jpeg_1",
+        "avg_width": 426.8,
+        "max_width": 553.0,
+        "avg_height": 2318.1,
+        "max_height": 3274.0
+    },
+    {
+        "name": "IMG_9703.jpeg_0",
+        "avg_width": 443.54545454545456,
+        "max_width": 610.0,
+        "avg_height": 2452.8,
+        "max_height": 3166.0
+    },
+    {
+        "name": "IMG_9703.jpeg_1",
+        "avg_width": 410.1818181818182,
+        "max_width": 575.0,
+        "avg_height": 2302.181818181818,
+        "max_height": 3123.0
+    },
+    {
+        "name": "IMG_9580.jpeg_0",
+        "avg_width": 414.0,
+        "max_width": 584.0,
+        "avg_height": 2900.909090909091,
+        "max_height": 3866.0
+    },
+    {
+        "name": "IMG_9580.jpeg_1",
+        "avg_width": 420.09090909090907,
+        "max_width": 576.0,
+        "avg_height": 2671.5454545454545,
+        "max_height": 3531.0
+    },
+    {
+        "name": "IMG_9996.jpeg_0",
+        "avg_width": 440.1818181818182,
+        "max_width": 600.0,
+        "avg_height": 3170.8,
+        "max_height": 3849.0
+    },
+    {
+        "name": "IMG_9996.jpeg_1",
+        "avg_width": 501.2,
+        "max_width": 640.0,
+        "avg_height": 3223.5555555555557,
+        "max_height": 3520.0
+    },
+    {
+        "name": "IMG_9631.jpeg_0",
+        "avg_width": 437.6363636363636,
+        "max_width": 606.0,
+        "avg_height": 2726.6,
+        "max_height": 3378.0
+    },
+    {
+        "name": "IMG_9631.jpeg_1",
+        "avg_width": 448.8181818181818,
+        "max_width": 624.0,
+        "avg_height": 2492.6363636363635,
+        "max_height": 3305.0
+    },
+    {
+        "name": "IMG_9559.jpeg_0",
+        "avg_width": 492.8,
+        "max_width": 636.0,
+        "avg_height": 2703.818181818182,
+        "max_height": 3680.0
+    },
+    {
+        "name": "IMG_9559.jpeg_1",
+        "avg_width": 440.0,
+        "max_width": 598.0,
+        "avg_height": 2671.3636363636365,
+        "max_height": 3525.0
+    },
+    {
+        "name": "IMG_9934.jpeg_0",
+        "avg_width": 535.3,
+        "max_width": 1040.0,
+        "avg_height": 2058.3333333333335,
+        "max_height": 3184.0
+    },
+    {
+        "name": "IMG_9934.jpeg_1",
+        "avg_width": 0.2222222222222222,
+        "max_width": 1079.0,
+        "avg_height": 0.36363636363636365,
+        "max_height": 2774.0
+    },
+    {
+        "name": "IMG_9871.jpeg_0",
+        "avg_width": 526.1,
+        "max_width": 727.0,
+        "avg_height": 2030.090909090909,
+        "max_height": 2990.0
+    },
+    {
+        "name": "IMG_9871.jpeg_1",
+        "avg_width": 509.72727272727275,
+        "max_width": 677.0,
+        "avg_height": 2074.2,
+        "max_height": 2715.0
+    },
+    {
+        "name": "IMG_9922.jpeg_0",
+        "avg_width": 585.4444444444445,
+        "max_width": 779.0,
+        "avg_height": 1787.2727272727273,
+        "max_height": 3120.0
+    },
+    {
+        "name": "IMG_9922.jpeg_1",
+        "avg_width": 586.0,
+        "max_width": 753.0,
+        "avg_height": 1919.7272727272727,
+        "max_height": 2940.0
+    },
+    {
+        "name": "IMG_9758.jpeg_0",
+        "avg_width": 587.1111111111111,
+        "max_width": 735.0,
+        "avg_height": 2099.7,
+        "max_height": 3170.0
+    },
+    {
+        "name": "IMG_9758.jpeg_1",
+        "avg_width": 531.5,
+        "max_width": 680.0,
+        "avg_height": 2541.7,
+        "max_height": 3080.0
+    },
+    {
+        "name": "IMG_9975.jpeg_0",
+        "avg_width": 466.09090909090907,
+        "max_width": 636.0,
+        "avg_height": 2461.818181818182,
+        "max_height": 3377.0
+    },
+    {
+        "name": "IMG_9975.jpeg_1",
+        "avg_width": 484.27272727272725,
+        "max_width": 639.0,
+        "avg_height": 2664.6363636363635,
+        "max_height": 3374.0
+    },
+    {
+        "name": "IMG_9562.jpeg_0",
+        "avg_width": 439.8,
+        "max_width": 605.0,
+        "avg_height": 2534.090909090909,
+        "max_height": 3611.0
+    },
+    {
+        "name": "IMG_9562.jpeg_1",
+        "avg_width": 458.0,
+        "max_width": 671.0,
+        "avg_height": 2485.3636363636365,
+        "max_height": 3560.0
+    },
+    {
+        "name": "IMG_9889.jpeg_0",
+        "avg_width": 570.6,
+        "max_width": 707.0,
+        "avg_height": 2266.4545454545455,
+        "max_height": 3040.0
+    },
+    {
+        "name": "IMG_9889.jpeg_1",
+        "avg_width": 565.7777777777778,
+        "max_width": 706.0,
+        "avg_height": 2188.2,
+        "max_height": 2948.0
+    },
+    {
+        "name": "IMG_9535.jpeg_0",
+        "avg_width": 490.6363636363636,
+        "max_width": 675.0,
+        "avg_height": 2745.3636363636365,
+        "max_height": 3649.0
+    },
+    {
+        "name": "IMG_9535.jpeg_1",
+        "avg_width": 486.6363636363636,
+        "max_width": 700.0,
+        "avg_height": 2634.4,
+        "max_height": 3329.0
+    },
+    {
+        "name": "IMG_9718.jpeg_0",
+        "avg_width": 477.5,
+        "max_width": 679.0,
+        "avg_height": 2570.2727272727275,
+        "max_height": 3668.0
+    },
+    {
+        "name": "IMG_9718.jpeg_1",
+        "avg_width": 426.27272727272725,
+        "max_width": 592.0,
+        "avg_height": 2834.909090909091,
+        "max_height": 3603.0
+    },
+    {
+        "name": "IMG_9574.jpeg_0",
+        "avg_width": 429.3636363636364,
+        "max_width": 622.0,
+        "avg_height": 2667.2727272727275,
+        "max_height": 3685.0
+    },
+    {
+        "name": "IMG_9574.jpeg_1",
+        "avg_width": 450.9,
+        "max_width": 633.0,
+        "avg_height": 2068.2727272727275,
+        "max_height": 3030.0
+    },
+    {
+        "name": "IMG_9919.jpeg_0",
+        "avg_width": 539.8888888888889,
+        "max_width": 689.0,
+        "avg_height": 2699.6,
+        "max_height": 3680.0
+    },
+    {
+        "name": "IMG_9919.jpeg_1",
+        "avg_width": 462.8181818181818,
+        "max_width": 621.0,
+        "avg_height": 2425.181818181818,
+        "max_height": 3199.0
+    },
+    {
+        "name": "IMG_9978.jpeg_0",
+        "avg_width": 441.1818181818182,
+        "max_width": 603.0,
+        "avg_height": 2461.2727272727275,
+        "max_height": 3357.0
+    },
+    {
+        "name": "IMG_9978.jpeg_1",
+        "avg_width": 467.1818181818182,
+        "max_width": 632.0,
+        "avg_height": 2310.909090909091,
+        "max_height": 3047.0
+    },
+    {
+        "name": "IMG_9755.jpeg_0",
+        "avg_width": 482.4,
+        "max_width": 734.0,
+        "avg_height": 1976.6363636363637,
+        "max_height": 2886.0
+    },
+    {
+        "name": "IMG_9755.jpeg_1",
+        "avg_width": 546.6,
+        "max_width": 673.0,
+        "avg_height": 2077.7,
+        "max_height": 2611.0
+    },
+    {
+        "name": "IMG_9743.jpeg_0",
+        "avg_width": 486.8,
+        "max_width": 678.0,
+        "avg_height": 2584.4545454545455,
+        "max_height": 3850.0
+    },
+    {
+        "name": "IMG_9743.jpeg_1",
+        "avg_width": 466.27272727272725,
+        "max_width": 649.0,
+        "avg_height": 2784.090909090909,
+        "max_height": 3693.0
+    },
+    {
+        "name": "IMG_9981.jpeg_0",
+        "avg_width": 496.9,
+        "max_width": 685.0,
+        "avg_height": 2156.4545454545455,
+        "max_height": 3110.0
+    },
+    {
+        "name": "IMG_9981.jpeg_1",
+        "avg_width": 439.90909090909093,
+        "max_width": 625.0,
+        "avg_height": 2271.7272727272725,
+        "max_height": 3115.0
+    },
+    {
+        "name": "IMG_9850.jpeg_0",
+        "avg_width": 494.0,
+        "max_width": 689.0,
+        "avg_height": 2217.181818181818,
+        "max_height": 3180.0
+    },
+    {
+        "name": "IMG_9850.jpeg_1",
+        "avg_width": 529.1,
+        "max_width": 726.0,
+        "avg_height": 2193.2727272727275,
+        "max_height": 3170.0
+    },
+    {
+        "name": "IMG_9542.jpeg_0",
+        "avg_width": 476.9,
+        "max_width": 645.0,
+        "avg_height": 2540.2727272727275,
+        "max_height": 3617.0
+    },
+    {
+        "name": "IMG_9542.jpeg_1",
+        "avg_width": 439.9,
+        "max_width": 612.0,
+        "avg_height": 2045.7272727272727,
+        "max_height": 3400.0
+    },
+    {
+        "name": "IMG_9954.jpeg_0",
+        "avg_width": 514.1,
+        "max_width": 669.0,
+        "avg_height": 2313.181818181818,
+        "max_height": 3154.0
+    },
+    {
+        "name": "IMG_9954.jpeg_1",
+        "avg_width": 480.27272727272725,
+        "max_width": 646.0,
+        "avg_height": 2233.4,
+        "max_height": 3055.0
+    },
+    {
+        "name": "IMG_9684.jpeg_0",
+        "avg_width": 466.90909090909093,
+        "max_width": 669.0,
+        "avg_height": 2596.090909090909,
+        "max_height": 3395.0
+    },
+    {
+        "name": "IMG_9684.jpeg_1",
+        "avg_width": 524.5,
+        "max_width": 697.0,
+        "avg_height": 2476.818181818182,
+        "max_height": 3330.0
+    },
+    {
+        "name": "IMG_9796.jpeg_0",
+        "avg_width": 499.6,
+        "max_width": 694.0,
+        "avg_height": 2077.5454545454545,
+        "max_height": 3107.0
+    },
+    {
+        "name": "IMG_9796.jpeg_1",
+        "avg_width": 449.72727272727275,
+        "max_width": 641.0,
+        "avg_height": 2246.5454545454545,
+        "max_height": 3086.0
     }
 ]
