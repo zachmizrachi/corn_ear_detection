@@ -70,7 +70,7 @@ def contours(image, filename):
 
     for idx, contour in enumerate(contours):
 
-        rotate_contour(image, contour, 90)
+        rotate_main(image, contour, 50)
 
         # Calculate highest and lowest points of contour
         ext_top = tuple(contour[contour[:, :, 1].argmin()][0])
@@ -225,7 +225,8 @@ def main():
 
         print("Finished image: " + str(filename))
 
-        break
+        if idx==5 : 
+            break
 
     # Write the image data to a JSON file
     output_file = 'image_data.json'
