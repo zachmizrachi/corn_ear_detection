@@ -154,7 +154,9 @@ def transform_sheet(image, corners) :
     sorted_corners = np.empty((0, 2), dtype="float32")
     # Define the four destination points (corners of the rectangle)
 
-    pts_dst = np.array([[0, 0], [width - 1, 0], [0, height - 1], [width - 1, height - 1]], dtype="float32")
+    pageDim = 2000
+
+    pts_dst = np.array([[0, 0], [pageDim, 0], [0, pageDim], [pageDim, pageDim]], dtype="float32")
     # top left, top right, bottom left, bottom right
 
     # need to match the original corner marker to its respective corner (TL TR BL BR) before warp
@@ -173,7 +175,22 @@ def transform_sheet(image, corners) :
     # Compute the perspective transformation matrix
     M = cv2.getPerspectiveTransform(np.float32(sorted_corners), np.float32(pts_dst))
     # Apply the perspective transformation
-    warped_image = cv2.warpPerspective(image, M, (width, height))
+    warped_image = cv2.warpPerspective(image, M, (pageDim, pageDim))
+
+    sorted_corners = sorted_corners.reshape(-1, 1, 2)  # Reshape for perspectiveTransform
+    transformed_corners = cv2.perspectiveTransform(np.float32(sorted_corners), M)
+    # Convert transformed corners back to a simple list of points
+    transformed_corners = transformed_corners.reshape(-1, 2)
+
+    # Draw the transformed corners on the warped image
+    for corner in transformed_corners:
+        x, y = int(corner[0]), int(corner[1])
+        cv2.circle(warped_image, (x, y), 5, (255, 255, 0), 30)  # Draw green circles at each corner
+
+    # Display the warped image with the corners
+    # cv2.imshow('Warped Image with Corners', warped_image)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
     return warped_image
 
@@ -181,7 +198,40 @@ def scale_img(img) :
     sheet_filtered = find_sheet(img)
     corners = find_corner_coords(sheet_filtered)
     warped = transform_sheet(img, corners)
-    return warped
+
+    # top left, top right, bottom left, bottom right
+    # 0         1          2            3
+    # Calculate the distances between consecutive points
+    # dTop = np.linalg.norm(corners[0] - corners[1])
+    # dLeft = np.linalg.norm(corners[0] - corners[2])
+    # dBot = np.linalg.norm(corners[2] - corners[3])
+    # dRight = np.linalg.norm(corners[3] - corners[0])
+
+    # print("base sheet width and height: " + str(warped.shape[0]) + ", " + str(warped.shape[1]))
+    # print("Side lengths: " + str(dLeft) + " | " + str(dRight))
+    # print("Top Bot lengths: " + str(dTop) + " | " + str(dBot))
+
+    # Calculate the average lengths of the parallel sides
+    topImage = 2000
+    sideImage = 2000
+
+    topbot_Real = 7.67 #195
+    sides_Real = 9.64 #245
+
+    ratio1 = topbot_Real / topImage
+    ratio2 = sides_Real / sideImage
+
+    finalRatio = (ratio1 + ratio2)/2
+
+    # print("Ratio 1 and 2: " + str(ratio1) + " " + str(ratio2))
+    # print("Final Ratio: " + str(finalRatio))
+    # print("Top to bottom pixels: " + str(sideImage))
+
+    # cv2.imshow("Warped", warped)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+
+    return warped, finalRatio
 
 
 if __name__ == "__main__":

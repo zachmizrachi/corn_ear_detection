@@ -119,6 +119,8 @@ def contours(image, filename):
         # Draw bounding rectangle
         cv2.rectangle(image, (x, y), (x+w, y+h), (255, 255, 0), thickness=10)
 
+        # print("ear top to bottom pixels: " + str(h))
+
         # Draw horizontal lines connecting sides of bounding box with contour
         horizontal_distances = []
         for i in range(y, y + h + 1, int(h / 10)):
@@ -187,23 +189,28 @@ def main():
     folder_path = 'Popcorn Images/Ears'
     image_data = []
 
+    page_lengths = []
+
     # Loop through the images in the folder
     for idx, filename in enumerate(os.listdir(folder_path)):
-       
+
+        # filename = "IMG_9520.jpeg"
+
         image_path = os.path.join(folder_path, filename)
         img = cv2.imread(image_path)
         height, width = img.shape[:2]
 
         if width > height:
             img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) 
+            height, width = img.shape[:2]
 
-        scaled_img = scale_img(img)
+        scaled_img, ratio = scale_img(img)
 
         # cv2.imshow("scaled_img", scaled_img)
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
-        yellow_img = mask_yellow(scaled_img )
+        yellow_img = mask_yellow(scaled_img)
         # cv2.imwrite("yellow.png", yellow_img)
         gray_image, dilated_image = convert_and_dilate(yellow_img)
         # cv2.imwrite("dilated_image.png", dilated_image)
@@ -216,25 +223,25 @@ def main():
         for i in range(data.shape[0]): 
             image_info = {
                 "name": str(filename) + "_" + str(i),
-                "avg_width": data[i][0],
-                "max_width": data[i][1],
-                "avg_height": data[i][2],
-                "max_height": data[i][3],
+                "avg_width": data[i][0] * ratio,
+                "max_width": data[i][1] * ratio,
+                "avg_height": data[i][2] * ratio,
+                "max_height": data[i][3] * ratio,
             }
             image_data.append(image_info)
 
 
         print("Finished image: " + str(filename))
 
-        # if idx==2 : 
+        # if idx==5 : 
         #     break
 
-    # Write the image data to a JSON file
-    output_file = 'image_data.json'
-    with open(output_file, 'w') as json_file:
-        json.dump(image_data, json_file, indent=4)
+        # Write the image data to a JSON file
+        output_file = 'image_data.json'
+        with open(output_file, 'w') as json_file:
+            json.dump(image_data, json_file, indent=4)
 
-    print(f"Image data has been written to {output_file} successfully.")
+        print(f"Image data has been written to {output_file} successfully.")
 
 if __name__ == "__main__":
     main()
